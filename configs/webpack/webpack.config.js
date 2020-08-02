@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackNodeExternals = require('webpack-node-externals');
 
@@ -48,7 +47,7 @@ const backendConfiguration = {
   },
   devtool: 'source-map',
   resolve: {
-    extensions: ['.ts', '.tsx', '.js']
+    extensions: ['.ts', '.tsx']
   },
   module: {
     rules: [
