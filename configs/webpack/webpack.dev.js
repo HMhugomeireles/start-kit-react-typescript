@@ -1,6 +1,7 @@
 const webpackConfigShared = require('./webpack.shared');
 const WebpackNodeExternals = require('webpack-node-externals');
 
+//todo
 const frontendConfiguration = {
   entry: webpackConfigShared.entries.client,
   output: {

@@ -4,9 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config ./configs/webpack/webpack.config.js",
+    "build": "webpack --env.NODE_ENV=production --config ./configs/webpack/webpack.config.js",
     "build:p": "webpack --mode production --config ./configs/webpack/webpack.config.js",
-    "start": "webpack-dev-server --config ./configs/webpack/webpack.config.js"
+    "start": "webpack-dev-server --env.NODE_ENV=development --config ./configs/webpack/webpack.config.js",
+    "test": "webpack --env.NODE_ENV=testing --config ./configs/webpack/webpack.config.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
